@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tactile Music Experience</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>TACTILE MUSIC EXPERIENCE</h1>
+  <p>Touch the screen with one or more fingers, or click with your mouse, to activate the sound machine. Enjoy!</p>
+  <div id="gameBoard">
+    <img src="https://th.bing.com/th/id/OIG1.IK4qUptXYSTMs8xHhUUN?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Game Board">
+  </div>
+  <div id="controls">
+    <img src="https://th.bing.com/th/id/OIG4.tBe.a_fSU8o3AMFChppL?pid=ImgGn" alt="Controls" usemap="#controlsMap">
+    <map name="controlsMap">
+      <area shape="rect" coords="10,10,50,50" href="#" id="control1" data-parameter="volume" data-value="0.5">
+      <area shape="rect" coords="60,10,100,50" href="#" id="control2" data-parameter="attack" data-value="0.2">
+      <!-- Add more area tags for additional controls -->
+    </map>
+  </div>
+  <button id="resetButton">Reset</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
